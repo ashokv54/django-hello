@@ -124,7 +124,7 @@ STATIC_URL = '/static/'
 
 
 PROJECT_APPS = (
- 'myapp'
+ 'MyApp'
 )
 
 JENKINS_TASKS = (
