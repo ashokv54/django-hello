@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'myapp.apps.MyappConfig',
+    'django_jenkins'
 ]
 
 MIDDLEWARE = [
@@ -119,3 +120,14 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+
+PROJECT_APPS = (
+ 'myapp'
+)
+
+JENKINS_TASKS = (
+ 'django_jenkins.tasks.run_pep8',
+ 'django_jenkins.tasks.run_pyflakes'
+)
